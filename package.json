@@ -11,5 +11,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zeromake/koa2-webpack-middleware-zm/issues"
+  },
+  "engines": {
+    "node": ">=6.5"
   }
 }

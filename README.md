@@ -1,3 +1,6 @@
+[![npm][npm]][npm-url]
+[![node][node]][node-url]
+
 # koa2-webpack-middleware-zm
 [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) for [koa2](https://github.com/koajs/koa/tree/v2.x)
 
@@ -47,3 +50,9 @@ entry: {
 	app: ['webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000', 'app.js']
 }
 ```
+
+[npm]: https://img.shields.io/npm/v/koa2-webpack-middleware-zm.svg
+[npm-url]: https://npmjs.com/package/koa2-webpack-middleware-zm
+
+[node]: https://img.shields.io/node/v/koa2-webpack-middleware-zm.svg
+[node-url]: https://nodejs.org

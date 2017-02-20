@@ -1,6 +1,8 @@
-const koaDevMiddleware = require('./devMiddleware')
-const koaHotMiddleware = require('./hotMiddleware')
+const koaDevMiddleware = require('./lib/devMiddleware');
+
+const koaHotMiddleware = require('./lib/hotMiddleware');
+
 module.exports = {
-	koaDevMiddleware: koaDevMiddleware,
-	koaHotMiddleware: koaHotMiddleware
-}
+  koaDevMiddleware,
+  koaHotMiddleware,
+};

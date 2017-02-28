@@ -8,13 +8,13 @@ const request = require("supertest")
 const webpackConfig = require("./fixtures/server-test/webpack.config")
 const koaState =  require("./fixtures/server-test/serve")
 //const webpackMultiConfig = require("./fixtures/server-test/webpack.array.config")
-
+const isWin = require("os").platform() === "win32"
 
 describe('dev-middleware', function() {
     var app, listen
 
     function listenShorthand(done) {
-        return app.listen(8000, "127.0.0.1", done)
+        return app.listen(done)
     }
 
     function close(done) {
@@ -40,9 +40,10 @@ describe('dev-middleware', function() {
         })
         after(close)
         it("GET request to bundle file", function(done){
+            const file_size = isWin ? "2873": "2869"
             request(listen).get('/public/bundle.js')
             .expect("Content-Type", "application/javascript; charset=UTF-8")
-            .expect("Content-Length", "2869")
+            .expect("Content-Length", file_size)
             .expect("Access-Control-Allow-Origin", "*")
             .expect(200, /console\.log\("Hey\."\)/, done);
         })
@@ -51,9 +52,10 @@ describe('dev-middleware', function() {
             .expect(404, done)
         })
         it("request to image", function(done) {
+            const file_size = isWin ? "4811": "4778"
             request(listen).get('/public/svg.svg')
             .expect("Content-Type", "image/svg+xml")
-            .expect("Content-Length", "4778")
+            .expect("Content-Length", file_size)
             .expect(200, done)
         })
         it("request to non existiong file", function(done) {
@@ -67,9 +69,10 @@ describe('dev-middleware', function() {
             .expect(200, /\[\"hi\"\]/, done)
         })
         it("request to index.html", function(done) {
+            const file_size = isWin ? "11": "10"
             request(listen).get('/public/index.html')
             .expect("Content-Type", "text/html; charset=utf-8")
-            .expect("Content-Length", "10")
+            .expect("Content-Length", file_size)
             .expect(200, /My\ Index\./, done)
         })
         // koa-send no range

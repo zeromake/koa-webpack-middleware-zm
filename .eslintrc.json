@@ -2,6 +2,7 @@
     "extends": "airbnb-base",
 	"rules": {
 		"no-param-reassign": "off",
-        "indent": ["error", 4]
+        "indent": ["error", 4],
+        "prefer-rest-params": "off"
 	}
 }

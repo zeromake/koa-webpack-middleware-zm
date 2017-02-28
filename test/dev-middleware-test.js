@@ -42,7 +42,7 @@ describe('dev-middleware', function() {
         it("GET request to bundle file", function(done){
             request(listen).get('/public/bundle.js')
             .expect("Content-Type", "application/javascript; charset=UTF-8")
-            .expect("Content-Length", "2869")
+            .expect("Content-Length", "2873")
             .expect("Access-Control-Allow-Origin", "*")
             .expect(200, /console\.log\("Hey\."\)/, done);
         })
@@ -53,7 +53,7 @@ describe('dev-middleware', function() {
         it("request to image", function(done) {
             request(listen).get('/public/svg.svg')
             .expect("Content-Type", "image/svg+xml")
-            .expect("Content-Length", "4778")
+            .expect("Content-Length", "4811")
             .expect(200, done)
         })
         it("request to non existiong file", function(done) {
@@ -69,7 +69,7 @@ describe('dev-middleware', function() {
         it("request to index.html", function(done) {
             request(listen).get('/public/index.html')
             .expect("Content-Type", "text/html; charset=utf-8")
-            .expect("Content-Length", "10")
+            .expect("Content-Length", "11")
             .expect(200, /My\ Index\./, done)
         })
         // koa-send no range

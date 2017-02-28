@@ -1,5 +1,6 @@
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
+[![Travis Build Status](https://travis-ci.org/zeromake/koa2-webpack-middleware-zm.svg?branch=master)](https://travis-ci.org/zeromake/koa2-webpack-middleware-zm)
 
 # koa2-webpack-middleware-zm
 [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) for [koa2](https://github.com/koajs/koa/tree/v2.x)

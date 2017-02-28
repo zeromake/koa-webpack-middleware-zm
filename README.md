@@ -3,14 +3,14 @@
 [![Travis Build Status](https://travis-ci.org/zeromake/koa2-webpack-middleware-zm.svg?branch=master)](https://travis-ci.org/zeromake/koa2-webpack-middleware-zm)
 
 # koa2-webpack-middleware-zm
-[webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) for [koa2](https://github.com/koajs/koa/tree/v2.x)
+[webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) for [koa](https://github.com/koajs/koa)
 
 ## Install
 $ npm i koa2-webpack-middleware-zm -D
 
 ## Usage
 ``` javascript
-const koa = require('koa2')
+const koa = require('koa')
 const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')

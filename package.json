@@ -1,6 +1,6 @@
 {
   "name": "koa2-webpack-middleware-zm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "koa2's webpack middleware by zeromake",
   "main": "index.js",
   "repository": {
@@ -16,7 +16,7 @@
     "node": ">=6.5"
   },
   "scripts": {
-    "test": "mocha --harmony",
+    "test": "mocha",
     "lint": "eslint lib/*.js",
     "lint-html": "eslint lib/*.js -f html -o ./reports/lint-results.html",
     "lint-fix": "eslint --fix lib/*.js"
@@ -25,11 +25,13 @@
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "koa2": "^2.0.0-alpha.7",
+    "koa": "^2.0.1",
     "mocha": "^3.2.0",
-    "sinon": "^1.17.7",
     "supertest": "^3.0.0",
+    "sinon": "^1.17.7",
+    "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.1",
-    "webpack-hot-middleware": "^2.17.0"
+    "webpack-hot-middleware": "^2.17.0",
+    "koa-send": "^3.3.0"
   }
 }

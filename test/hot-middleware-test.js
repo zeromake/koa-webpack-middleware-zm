@@ -7,7 +7,7 @@ const supertest = require('supertest');
 const sinon = require('sinon');
 
 describe('hot-middleware', () => {
-    let s,
+    var s,
         compiler,
         app,
         hotMiddleware;

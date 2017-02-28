@@ -11,7 +11,7 @@ const koaState =  require("./fixtures/server-test/serve")
 
 
 describe('dev-middleware', function() {
-    let app, listen
+    var app, listen
 
     function listenShorthand(done) {
         return app.listen(8000, "127.0.0.1", done)

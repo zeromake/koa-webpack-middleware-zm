@@ -26,7 +26,7 @@ describe('hot-middleware', () => {
                 }
 
                 // Tick 3 times, then verify
-                let i = 0;
+                var i = 0;
                 tick(10, 'seconds');
                 res.on('data', () => {
                     if (++i < 3) {

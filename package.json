@@ -1,16 +1,16 @@
 {
-  "name": "koa2-webpack-middleware-zm",
-  "version": "1.0.3",
-  "description": "koa2's webpack middleware by zeromake",
+  "name": "koa-webpack-middleware-zm",
+  "version": "0.0.3",
+  "description": "koa's webpack middleware by zeromake",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeromake/koa2-webpack-middleware-zm"
+    "url": "git+https://github.com/zeromake/koa-webpack-middleware-zm"
   },
   "author": "zeromake <fly-zero@hotmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zeromake/koa2-webpack-middleware-zm/issues"
+    "url": "https://github.com/zeromake/koa-webpack-middleware-zm/issues"
   },
   "engines": {
     "node": ">=6.5"

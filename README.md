@@ -1,12 +1,13 @@
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
-[![Travis Build Status](https://travis-ci.org/zeromake/koa2-webpack-middleware-zm.svg?branch=master)](https://travis-ci.org/zeromake/koa2-webpack-middleware-zm)
+[![Travis Build Status](https://travis-ci.org/zeromake/koa-webpack-middleware-zm.svg?branch=master)](https://travis-ci.org/zeromake/koa-webpack-middleware-zm)
+[![npm install](https://img.shields.io/npm/dm/koa-webpack-middleware-zm.svg)](npm-url)
 
-# koa2-webpack-middleware-zm
+# koa-webpack-middleware-zm
 [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) for [koa](https://github.com/koajs/koa)
 
 ## Install
-$ npm i koa2-webpack-middleware-zm -D
+$ npm i koa-webpack-middleware-zm -D
 
 ## Usage
 ``` javascript
@@ -52,8 +53,8 @@ entry: {
 }
 ```
 
-[npm]: https://img.shields.io/npm/v/koa2-webpack-middleware-zm.svg
+[npm]: https://img.shields.io/npm/v/koa-webpack-middleware-zm.svg
 [npm-url]: https://npmjs.com/package/koa2-webpack-middleware-zm
 
-[node]: https://img.shields.io/node/v/koa2-webpack-middleware-zm.svg
+[node]: https://img.shields.io/node/v/koa-webpack-middleware-zm.svg
 [node-url]: https://nodejs.org

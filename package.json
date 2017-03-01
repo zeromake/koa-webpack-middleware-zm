@@ -13,7 +13,7 @@
     "url": "https://github.com/zeromake/koa-webpack-middleware-zm/issues"
   },
   "engines": {
-    "node": ">=6.5"
+    "node": ">=5.4"
   },
   "scripts": {
     "test": "mocha",
@@ -21,6 +21,11 @@
     "lint-html": "eslint lib/*.js -f html -o ./reports/lint-results.html",
     "lint-fix": "eslint --fix lib/*.js"
   },
+  "keywords": [
+     "koa",
+     "webpack",
+     "middleware"
+  ],
   "devDependencies": {
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",

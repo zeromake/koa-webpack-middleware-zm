@@ -22,11 +22,11 @@ const app = koa()
 const devCompiler = webpack(devConfig)
 // dev
 const expressDevMiddleware = webpackDevMiddleware(devCompiler, {
-	/* opt */
-	publicPath: devConfig.output.publicPath,
-	stats: {
-		colors: true
-	}
+    /* opt */
+    publicPath: devConfig.output.publicPath,
+    stats: {
+        colors: true
+    }
 })
 app.use(koaDevMiddleware(expressDevMiddleware))
 /*
@@ -42,14 +42,14 @@ app.use(koaDevMiddleware(expressHotMiddleware))
 1. webpack `plugins` configure
 ``` javascript
 plugins: [
-	new webpack.HotModuleReplacementPlugin(),
-	new webpack.NoErrorsPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
 ]
 ```
 2. webpack `entry` configure
 ``` javascript
 entry: {
-	app: ['webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000', 'app.js']
+    app: ['webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000', 'app.js']
 }
 ```
 

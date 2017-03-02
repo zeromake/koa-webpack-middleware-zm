@@ -1,7 +1,7 @@
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
 [![Travis Build Status](https://travis-ci.org/zeromake/koa-webpack-middleware-zm.svg?branch=master)](https://travis-ci.org/zeromake/koa-webpack-middleware-zm)
-[![npm install](https://img.shields.io/npm/dm/koa-webpack-middleware-zm.svg)](npm-url)
+[![npm install](https://img.shields.io/npm/dm/koa-webpack-middleware-zm.svg)](https://npmjs.com/package/koa-webpack-middleware-zm)
 
 # koa-webpack-middleware-zm
 [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) for [koa](https://github.com/koajs/koa)

@@ -54,7 +54,7 @@ entry: {
 ```
 
 [npm]: https://img.shields.io/npm/v/koa-webpack-middleware-zm.svg
-[npm-url]: https://npmjs.com/package/koa2-webpack-middleware-zm
+[npm-url]: https://npmjs.com/package/koa-webpack-middleware-zm
 
 [node]: https://img.shields.io/node/v/koa-webpack-middleware-zm.svg
 [node-url]: https://nodejs.org

@@ -15,7 +15,7 @@ const koa = require('koa')
 const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')
-const { koaDevMiddleware, koaHotMiddleware } = require('koa2-webpack-middleware-zm')
+const { koaDevMiddleware, koaHotMiddleware } = require('koa-webpack-middleware-zm')
 
 const devConfig = require('./webpack.dev.config')
 const app = koa()

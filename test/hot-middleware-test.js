@@ -187,6 +187,11 @@ describe('hot-middleware', () => {
                     }
                 });
         });
+        it('request to non existiong file', (done) => {
+            supertest(app.listen()).get('/test.json')
+            .expect("Content-Type", "text/plain; charset=utf-8")
+            .expect(404, done)
+        })
     });
     beforeEach(() => {
         s = sinon.sandbox.create();

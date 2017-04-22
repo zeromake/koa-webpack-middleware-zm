@@ -36,7 +36,7 @@ expressDevMiddleware.fileSystem
 */
 // hot
 const expressHotMiddleware = webpackHotMiddleware(devCompiler, {/*opt*/})
-app.use(koaDevMiddleware(expressHotMiddleware))
+app.use(koaHotMiddleware(expressHotMiddleware))
 ```
 
 ## HMR(hot) configure
